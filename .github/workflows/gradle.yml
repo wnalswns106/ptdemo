@@ -1,10 +1,10 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: 
-    - "develop"
-    - "master"
+  #push:
+   # branches: 
+    #- "develop"
+    #- "master"
  workflow_dispatch:  # 수동 실행 가능하게 설정
 jobs:
   build:
