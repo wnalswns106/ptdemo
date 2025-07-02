@@ -21,6 +21,11 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
 
+     #./gradlew 파일에 권한을 부여한다. 권한을 부여하지 않으면 Permissions 에러가 발생한다.
+    - name: Build with Gradle authorization
+      run: chmod +x ./gradlew
+     
+
     - name: Run unit tests
       run: ./gradlew test
 
